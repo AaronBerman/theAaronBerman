@@ -1,1 +1,396 @@
-<meta http-equiv="refresh" content="0; URL='home.html'" />
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var theme =
+            stored === "light" || stored === "dark" || stored === "sepia"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light";
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {}
+      })();
+    </script>
+    <meta
+      name="description"
+      content="Aaron Berman - Streaming Support Engineer and Military Veteran based in Chesapeake, VA."
+    />
+    <meta name="author" content="Aaron Berman" />
+    <meta property="og:title" content="Aaron Berman" />
+    <meta
+      property="og:description"
+      content="Streaming Support Engineer and Military Veteran based in Chesapeake, VA."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://theaaronberman.com/" />
+    <meta name="theme-color" content="#bd5d38" />
+    <title>Aaron Berman | Streaming Support Engineer</title>
+    <link rel="canonical" href="https://theaaronberman.com/" />
+    <link rel="icon" type="image/x-icon" href="./resources/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/site.css" />
+  </head>
+
+  <body id="page-top">
+    <a class="sr-only sr-only-focusable" href="#about">Skip to content</a>
+
+    <div class="theme-switcher" role="group" aria-label="Color theme">
+      <button type="button" class="theme-switcher__btn" data-theme-value="light" aria-pressed="true">
+        Light
+      </button>
+      <button type="button" class="theme-switcher__btn" data-theme-value="dark" aria-pressed="false">
+        Dark
+      </button>
+      <button type="button" class="theme-switcher__btn" data-theme-value="sepia" aria-pressed="false">
+        Sepia
+      </button>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Aaron Berman</span>
+        <span class="d-none d-lg-block">
+          <img
+            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            src="./resources/AaronBermanBio.jpg"
+            alt="Aaron Berman"
+            width="160"
+            height="160"
+          />
+        </span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container-fluid p-0">
+      <section class="resume-section" id="about" aria-label="About">
+        <div class="resume-section-content">
+          <h1 class="mb-0">
+            Aaron
+            <span class="text-primary">Berman</span>
+          </h1>
+          <div class="subheading mb-5">
+            Chesapeake, VA &middot;
+            <a href="tel:+17572775674">(757) 277-5674</a>
+            &middot;
+            <a href="mailto:beaker133@gmail.com">beaker133@gmail.com</a>
+          </div>
+          <p class="lead mb-5">
+            Streaming Support Engineer and Military Veteran with a background in cybersecurity, systems support, and software
+            operations. Experienced diagnosing and resolving hardware, software, connectivity, and security issues, with a strong
+            focus on reliability for customer-facing streaming platforms. Career supported by a Bachelor of Science in Computer
+            Science with a Cybersecurity minor (Cum Laude).
+          </p>
+          <div class="social-icons">
+            <a
+              class="social-icon"
+              href="https://www.linkedin.com/in/beaker133"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a
+              class="social-icon"
+              href="https://github.com/AaronBerman"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            ><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a
+              class="btn btn-outline-dark btn-lg"
+              href="./resources/Aaron_BermanResume2.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Resume PDF</a>
+            <a
+              class="btn btn-outline-dark btn-lg"
+              href="./resources/Aaron_BermanResume1.docx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Resume DOCX</a>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+
+      <section class="resume-section" id="education" aria-labelledby="education-heading">
+        <div class="resume-section-content">
+          <h2 class="mb-5" id="education-heading">Education</h2>
+          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Old Dominion University</h3>
+              <div class="subheading mb-3">Bachelor of Science &mdash; Cum Laude</div>
+              <div>Computer Science &mdash; Cybersecurity minor</div>
+              <p>GPA: 3.58</p>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">2020</span></div>
+          </div>
+          <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Tidewater Community College</h3>
+              <div class="subheading mb-3">Associate of Science</div>
+              <div>Computer Science</div>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">2014</span></div>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+
+      <section class="resume-section" id="skills" aria-labelledby="skills-heading">
+        <div class="resume-section-content">
+          <h2 class="mb-5" id="skills-heading">Skills</h2>
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline dev-icons" aria-label="Technology icons">
+            <li class="list-inline-item" title="C++"><i class="devicon-cplusplus-plain" aria-hidden="true"></i></li>
+            <li class="list-inline-item" title="Python"><i class="fab fa-python" aria-hidden="true"></i></li>
+            <li class="list-inline-item" title="Java"><i class="fab fa-java" aria-hidden="true"></i></li>
+            <li class="list-inline-item" title="JavaScript"><i class="fab fa-js" aria-hidden="true"></i></li>
+            <li class="list-inline-item" title="PHP"><i class="fab fa-php" aria-hidden="true"></i></li>
+            <li class="list-inline-item" title="HTML5"><i class="fab fa-html5" aria-hidden="true"></i></li>
+            <li class="list-inline-item" title="CSS3"><i class="fab fa-css3-alt" aria-hidden="true"></i></li>
+            <li class="list-inline-item" title="Linux"><i class="fab fa-linux" aria-hidden="true"></i></li>
+            <li class="list-inline-item" title="Docker"><i class="fab fa-docker" aria-hidden="true"></i></li>
+            <li class="list-inline-item" title="Git"><i class="fab fa-git" aria-hidden="true"></i></li>
+            <li class="list-inline-item" title="MySQL"><i class="devicon-mysql-plain" aria-hidden="true"></i></li>
+            <li class="list-inline-item" title="Apache"><i class="devicon-apache-plain" aria-hidden="true"></i></li>
+            <li class="list-inline-item" title="Bootstrap"><i class="fab fa-bootstrap" aria-hidden="true"></i></li>
+          </ul>
+          <div class="subheading mb-3">Technical Competencies</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>
+              Programming: C++, Python, Java, HTML, CSS, JavaScript, TypeScript, PHP, Bash, Regex
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>
+              Operating Systems: Linux, Unix, macOS, Windows 10/11
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>
+              Observability &amp; ITSM: Grafana, Splunk, Observe, Jira, JSM, Confluence
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>
+              Collaboration &amp; Ops: Slack, Microsoft Teams, AWS SSM, Kiro (AI), Git, Docker, Apache, Office 365
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>
+              Networked Systems Security &amp; Information Assurance
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>
+              Risk Management, Access &amp; Identity Management
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>
+              Agile Development &amp; Scrum
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr class="m-0" />
+
+      <section class="resume-section" id="experience" aria-labelledby="experience-heading">
+        <div class="resume-section-content">
+          <h2 class="mb-5" id="experience-heading">Professional Experience</h2>
+
+          <article class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Streaming Support Engineer</h3>
+              <div class="subheading mb-3">Uplynk (formerly Edgio)</div>
+              <ul>
+                <li>
+                  Provide technical support for a cloud-based live and VOD streaming platform, troubleshooting playback, ingest, and delivery issues through to root cause
+                </li>
+                <li>
+                  Led triage and customer communications for 25+ high-priority incidents, partnering with developers to diagnose issues and keep stakeholders informed
+                </li>
+                <li>
+                  Author and proofread Official Incident Reports (OIRs) and Root Cause Analyses (RCAs) for major incidents
+                </li>
+                <li>
+                  Created and presented 10+ Technical Knowledge Shares (TKS) to improve team troubleshooting and operational readiness
+                </li>
+                <li>
+                  Use observability and monitoring tools including Grafana, Splunk, Observe, and Jira Service Management (JSM) to investigate incidents and system health
+                </li>
+                <li>
+                  Automate and accelerate troubleshooting with Python scripting, regular expressions, and AI-assisted analysis in Kiro
+                </li>
+                <li>
+                  Access and administer production systems via macOS/Unix environments and AWS Systems Manager (SSM) remote login
+                </li>
+                <li>
+                  Coordinate incident response and knowledge sharing across Slack, Microsoft Teams, Jira, and Confluence
+                </li>
+              </ul>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">September 12, 2023 &ndash; Present</span></div>
+          </article>
+
+          <article class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Programmer Analyst</h3>
+              <div class="subheading mb-3">Northrop Grumman &mdash; Joint Knowledge Online (JKO)</div>
+              <ul>
+                <li>
+                  Supported Joint Knowledge Online (JKO) learning content, troubleshooting course defects and delivery issues
+                </li>
+                <li>
+                  Updated and maintained interactive training courses using HTML, CSS, JavaScript, TypeScript, and course authoring software
+                </li>
+                <li>
+                  Reviewed courses for functionality, content quality, and technical readiness prior to release
+                </li>
+                <li>
+                  Diagnosed front-end and course-player issues to improve learner experience on the JKO platform
+                </li>
+              </ul>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">October 2022 &ndash; September 12, 2023</span></div>
+          </article>
+
+          <article class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Assembler IV</h3>
+              <div class="subheading mb-3">TE Connectivity</div>
+              <ul>
+                <li>
+                  Performed advanced troubleshooting techniques down to the component level on microelectronic devices; used
+                  schematics, technical drawings, and applied logical knowledge in the repair of ten types of air pressure scanners
+                </li>
+                <li>
+                  Applied functional knowledge to the repair of pneumatic leaks daily; maintained test equipment for use in
+                  troubleshooting customers equipment
+                </li>
+                <li>
+                  Performed calibration and accuracy testing on pressure sensors ranging from -12 to 750 pounds per square inch;
+                  tested air pressure sensors using proprietary software
+                </li>
+                <li>
+                  Wrote programming modules for use in testing repaired equipment, to help simulate real-world environments, for
+                  quality assurance and customer confidence
+                </li>
+                <li>
+                  Documented failures, both with pictures and data, of newly built sensors for review by applications engineering,
+                  quality assurance, and systems engineering
+                </li>
+              </ul>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">2006 &ndash; 2018</span></div>
+          </article>
+
+          <article class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Aviation Radar Repair &mdash; E4 Corporal</h3>
+              <div class="subheading mb-3">U.S. Marine Corps</div>
+              <ul>
+                <li>
+                  Supervised teams of 5 to 8 members in the training and maintenance of 2 mobile radar systems
+                </li>
+                <li>
+                  Maintained optimal functionality of electronic systems under demanding conditions, including support of Operation Iraqi Freedom
+                </li>
+                <li>
+                  Performed component-level technical maintenance on sensitive electronic equipment and subsystems
+                </li>
+                <li>
+                  Earned two meritorious promotions; received Certificate of Commendation and Meritorious Mast
+                </li>
+              </ul>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">2001 &ndash; 2006</span></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer no-border text-center">
+        <p>Copyright &copy; 2026 Aaron Berman</p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(".js-scroll-trigger").on("click", function () {
+        $(".navbar-collapse").collapse("hide");
+      });
+
+      (function () {
+        var themeColors = {
+          light: "#bd5d38",
+          dark: "#12151a",
+          sepia: "#5c3d28",
+        };
+
+        function setTheme(theme) {
+          if (!themeColors[theme]) theme = "light";
+          document.documentElement.setAttribute("data-theme", theme);
+          try {
+            localStorage.setItem("theme", theme);
+          } catch (e) {}
+
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", themeColors[theme]);
+
+          document.querySelectorAll("[data-theme-value]").forEach(function (btn) {
+            var active = btn.getAttribute("data-theme-value") === theme;
+            btn.setAttribute("aria-pressed", active ? "true" : "false");
+          });
+        }
+
+        var current =
+          document.documentElement.getAttribute("data-theme") || "light";
+        setTheme(current);
+
+        document.querySelectorAll("[data-theme-value]").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            setTheme(btn.getAttribute("data-theme-value"));
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
+
