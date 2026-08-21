@@ -2,6 +2,8 @@
 
 Personal resume site for [theaaronberman.com](https://theaaronberman.com), hosted on GitHub Pages.
 
+A longer command reference is in [docs/usage.html](docs/usage.html).
+
 ## Structure
 
 - `index.html` — redirects to the site
@@ -13,4 +15,8 @@ Personal resume site for [theaaronberman.com](https://theaaronberman.com), hoste
 
 ## Local preview
 
-Open `home.html` in a browser, or serve the folder with any static file server.
+Open `home.html` in a browser, or serve the folder with any static file server. No build step.
+
+## License
+
+Apache 2.0. See [LICENSE](LICENSE). Changes: [CHANGELOG.md](CHANGELOG.md). How to report a problem: [SECURITY.md](SECURITY.md).
